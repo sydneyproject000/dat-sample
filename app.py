@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import pickle 
-st.title("Elena's dashboard!!!")
+st.title("Restaurant attendance in Japan")
 
 url = r"https://raw.githubusercontent.com/sydneyproject000/dat-11-15/main/ClassMaterial/Unit1/data/master.csv"
 
