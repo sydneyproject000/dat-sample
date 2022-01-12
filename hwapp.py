@@ -67,7 +67,7 @@ else:
 
     model = load_model()
     
-    id_val = st.sidebar.selectbox("Choose Property ID", df['Id'].unique().tolist())
+    id_val = st.sidebar.number_input("Property ID", min_value=1461, step=1)
      
     OverallQual_val = st.sidebar.number_input("Overall Quality Score", min_value=1, max_value=10, step=1)
     
