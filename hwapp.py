@@ -69,7 +69,7 @@ else:
     
     id_val = st.sidebar.selectbox("Choose Property ID", df['Id'].unique().tolist())
      
-    OverallQual_val = st.sidebar.selectbox("Overall Quality Score", df['OverallQual'].unique().tolist())
+    OverallQual_val = st.sidebar.number_input("Overall Quality Score", min_value=1, max_value=10, step=1)
     
     Neighborhood_val = st.sidebar.selectbox("Neighborhood", df['Neighborhood'].unique().tolist())
     sample = {'Id':id_val,'OverallQual': OverallQual_val,'Neighborhood': Neighborhood_val}
