@@ -67,7 +67,7 @@ else:
 
     model = load_model()
     
-    id_val = st.sidebar.number_input("Property ID", min_value=1461, step=1)
+    GrLivArea_val = st.sidebar.number_input("Living Area", min_value=100, step=100)
      
     OverallQual_val = st.sidebar.number_input("Overall Quality Score", min_value=1, max_value=10, step=1)
     
