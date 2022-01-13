@@ -72,7 +72,7 @@ else:
     OverallQual_val = st.sidebar.number_input("Overall Quality Score", min_value=1, max_value=10, step=1)
     
     Neighborhood_val = st.sidebar.selectbox("Neighborhood", df['Neighborhood'].unique().tolist())
-    sample = {'GrLivArea':GrLivArea_val_val,'OverallQual': OverallQual_val,'Neighborhood': Neighborhood_val}
+    sample = {'GrLivArea':GrLivArea_val,'OverallQual': OverallQual_val,'Neighborhood': Neighborhood_val}
     sample=pd.DataFrame(sample, index = [0])
     prediction = model.predict(sample)[0]
     
